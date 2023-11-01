@@ -1,7 +1,7 @@
 import pickle
 import streamlit as st
 # import sklearn
-
+import urllib.request
 import numpy as np
 
 
@@ -28,10 +28,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
+model_url = "https://github.com/BlackHole3344/DataScienceApp/blob/main/trainedINSURANCE.sav"
+model_file = urllib.request.urlopen(model_url)
 #
 # st.markdown(f'<style>{custom_css}</style>', unsafe_allow_html=True)
-load_model = pickle.load(open("trainedINSURANCE.sav" , "rb"))
+load_model = pickle.load(model_file)
 # function for prediction
 
 image_url = "https://www.bajajfinserv.in/marketplace/insurance/health-insurance/health-insurance-premium-calculator/assets/img/MedicalImage.png"
