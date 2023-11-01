@@ -32,7 +32,7 @@ model_url = "https://github.com/BlackHole3344/DataScienceApp/blob/main/trainedIN
 model_file = urllib.request.urlopen(model_url)
 #
 # st.markdown(f'<style>{custom_css}</style>', unsafe_allow_html=True)
-load_model = pickle.load(model_file)
+load_model = pickle.load(open(model_file , "rb"))
 # function for prediction
 
 image_url = "https://www.bajajfinserv.in/marketplace/insurance/health-insurance/health-insurance-premium-calculator/assets/img/MedicalImage.png"
