@@ -31,7 +31,7 @@ st.markdown(
 
 #
 # st.markdown(f'<style>{custom_css}</style>', unsafe_allow_html=True)
-load_model = pickle.load(open("E:/Python DataAnalyis/Machine Learning/LinearRegression/InsuranceModel/trainedINSURANCE.sav" , "rb"))
+load_model = pickle.load(open("trainedINSURANCE.sav" , "rb"))
 # function for prediction
 
 image_url = "https://www.bajajfinserv.in/marketplace/insurance/health-insurance/health-insurance-premium-calculator/assets/img/MedicalImage.png"
