@@ -28,7 +28,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-model_url = "https://github.com/BlackHole3344/DataScienceApp/blob/main/trainedINSURANCE2.sav"
+model_url = "https://github.com/BlackHole3344/DataScienceApp/blob/b8d3c8fb7e27fffc87df69798f7c9da8935c12db/trainedINSURANCE.sav"
 model_file = urllib.request.urlopen(model_url)
 #
 # st.markdown(f'<style>{custom_css}</style>', unsafe_allow_html=True)
