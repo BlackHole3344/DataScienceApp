@@ -3,7 +3,7 @@ import streamlit as st
 
 
 import numpy as np
-from png import Image
+
 
 st.markdown(
     """
